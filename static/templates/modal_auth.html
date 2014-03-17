@@ -1,0 +1,24 @@
+<div class="modal-header">
+    <h3>Authentification</h3>
+</div>
+<div class="modal-body">
+    <div ng-show="auth.error" class="alert alert-error"> {{ error }} </div>
+    <form class="form-horizontal">
+        <div class="control-group">
+            <label class="control-label" for="username">Username</label>
+            <div class="controls">
+                <input type="text" name="username" ng-model="auth.username" placeholder="Username" />
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="password">Password</label>
+            <div class="controls">
+                <input type="password" name="password" ng-model="auth.password" placeholder="Password" />
+            </div>
+        </div>
+    </form>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary" ng-click="do_auth()">Sign in</button>
+</div>
+
